@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="mediaAreaWrapper">
+    <div id="myMediaArea">
+      <video id="my-video" width="400px" autoplay muted playsinline></video>
+      <div>
+        <button id="audio-mute">Audio Mute/Unmute</button>
+        <button id="video-mute">Video Mute/Unmute</button>
+      </div>
+    </div>
+    <div class="theirMediaAreaWrapper">
+      <div id="button-area"></div>
+      <!-- 対向をsubscribeするボタンを表示するエリア -->
+      <div id="their-media-area"></div>
+      <!-- 対向のaudio, video要素を表示するエリア -->
+    </div>
+  </div>
+    <p>ID: <span id="my-id"></span></p>
+    <!-- 自分のIDの表示 -->
+    <div>
+      Your name: <input id="my-name" type="text" />
+      room name: <input id="room-name" type="text" />
+      <!-- room名の入力 -->
+      <button id="join">join room</button><br>
+      <button id="close">close room</button>
+      <!-- 削除予定の機能 --><button id="dispose">dispose room</button><br>
+      Leave Member Name: <input id="leave-member-name" /> /自分がLeave:<input id="leave-me" type="checkbox" checked/><button id="leave">leave room</button>
+      <!-- roomに入室 -->
+    </div>
+    <hr>
+    <div>
+      Property: <input id="gInfoProperty" type="text"><button id="getRoomInfo">get Room Information</button>
+      <!--<button id="getMemberInfo">get Member Information</button>-->
+    </div>
+    <hr>
+    <div id="token-area">
+      <button id="createTokenBtn">Create Token</button>
+      <p>
+        ChannelName: <input id="ChannelName" type="text" /> (ALL(*): <input type="checkbox" id="ChannelAllFlag" checked />)
+      </p>
+      <p>
+      Channel Action: <select id="ChannelAction">
+        <option value="write">write</option>
+        <option value="read">read</option>
+        <option value="create">create</option>
+        <option value="delete">delete</option>
+        <option value="updateMetadata">updateMetadata</option>
+      </select>
+      </p>
+      <p>
+        MemberName: <input id="MemberName" type="text" /> (ALL(*): <input type="checkbox" id="MemberAllFlag" checked />)
+      </p>
+      <p>
+      Member Action: <select id="MemberAction">
+        <option value="write">write</option>
+        <option value="create">create</option>
+        <option value="delete">delete</option>
+        <option value="signal">signal</option>
+        <option value="updateMetadata">updateMetadata</option>
+      </select>
+      </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@skyway-sdk/room/dist/skyway_room-latest.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
