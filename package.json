@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "dev": "parcel ./src/index.html",
-    "build": "npm run transpile && parcel build ./src/index.html --public-url ./"
+    "build": "npm run transpile && parcel build ./src/index.html --public-url ./",
+    "build:2": "parcel ./src/index.html"
   },
   "repository": {
     "type": "git",
