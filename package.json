@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "build:example": "parcel build ./src/index.html --public-url ./",
     "dev": "parcel ./src/index.html",
-    "build": "npm run transpile && parcel build ./src/index.html --public-url ./",
-    "build:2": "parcel ./src/index.html"
+    "format": "eslint ./src --fix",
+    "lint": "eslint ./src --fix"
   },
   "repository": {
     "type": "git",
