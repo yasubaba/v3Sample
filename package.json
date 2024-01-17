@@ -1,11 +1,10 @@
 {
-  "name": "20230117",
+  "name": "skyway-tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel ./src/index.html"
+    "dev": "parcel ./src/index.html",
+    "build": "npm run transpile && parcel build ./src/index.html --public-url ./"
   },
   "repository": {
     "type": "git",
