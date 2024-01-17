@@ -1,0 +1,27 @@
+{
+  "name": "20230117",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasubaba/v3Sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yasubaba/v3Sample/issues"
+  },
+  "homepage": "https://github.com/yasubaba/v3Sample#readme",
+  "dependencies": {
+    "@skyway-sdk/room": "^1.6.2"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.11.0"
+  }
+}
